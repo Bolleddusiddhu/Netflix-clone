@@ -1,0 +1,15 @@
+iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.movie {
+  padding-top: 270px;
+
+  .description {
+    display: inline-block;
+    width: 400px;
+    white-space: normal;
+  }
+}

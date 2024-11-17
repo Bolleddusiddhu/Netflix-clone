@@ -1,0 +1,20 @@
+<div fxLayout="column" class="p-3">
+  <h3 class="mb-0">{{ title }}</h3>
+  <div #swiperContainer fxLayout="row" fxLayoutAlign="space-between start" fxLayoutGap="16px"
+    class="w-100 movies-container overflow-auto">
+    <ng-container *ngFor="let movie of videoContents">
+      <div (mouseenter)="triggerMouseEnter($event)" (mouseleave)="triggerMouseLeave($event)"
+        fxFlex="1 1 calc(15% - 16px)" class="movie">
+        <img class="w-100" [src]="movie?.poster_path | image" alt="">
+        <div class="movie-details">
+          <p style="font-size: 12px;">{{ movie?.title }}</p>
+          <p class="overflow-hidden mb-0"
+            style="font-size: 10px; width: 150px; white-space: nowrap; text-overflow: ellipsis">{{
+            movie?.overview
+            }}</p>
+          <p class="mb-0"><span class="text-success">Rating: </span>{{ movie?.vote_average }}</p>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>

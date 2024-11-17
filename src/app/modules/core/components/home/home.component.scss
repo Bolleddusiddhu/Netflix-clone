@@ -1,0 +1,16 @@
+app-banner {
+  display: block;
+  /* Ensure the banner takes space */
+  height: 600px;
+  /* Set a height that fits your iframe */
+  position: relative;
+  /* To control iframe positioning within */
+}
+
+app-banner iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

@@ -1,0 +1,14 @@
+<header id="header" class="px-3" fxLayout="row" fxLayoutAlign="space-between center">
+  <div fxLayout="row" fxLayoutAlign="start center">
+    <img class="logo" src="assets\netflix-logo.png" alt="netflix-logo" />
+    <div fxLayout="row" fxLayoutGap="16px">
+      <span class="text-white nav-items" *ngFor="let nav of navList">{{ nav }}</span>
+    </div>
+  </div>
+
+  <div class="text-white" fxLayout="row">
+    <a class="text-white" href="#">welcome!</a>
+    &nbsp; | &nbsp;
+    <a class="text-white" href="#">Signout</a>
+  </div>
+</header>

@@ -1,0 +1,21 @@
+#header {
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  .logo {
+    width: 100px;
+  }
+
+  .nav-items {
+    cursor: pointer;
+
+    &:hover {
+      color: gray !important;
+      transition-duration: 1s;
+    }
+  }
+}
